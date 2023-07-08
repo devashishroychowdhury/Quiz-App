@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #fff;
+    color: black;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-label {
+    background-color: #111;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox-label .ball {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.checkbox-label .ball {
+    transform: translateX(24px);
+}
+
+fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+.dark {
+    background-color: #292c35;
+    color: #fff;
+}
+
+.theme {
+    position: absolute;
+    right: 35px;
+}
+
+#theme {
+    background: white;
+    color: black;
+    width: 3rem;
+    position: absolute;
+    right: 3rem;
+    border-radius: 40px;
+    padding: 4px;
+    border: none;
+}
+
+#theme i {
+    font-size: 18px;
+}
+
+header {
+    text-align: center;
+    font-size: 30px;
+}
+
+header:hover {
+    text-decoration: underline;
+    transition: 0.9s;
+    cursor: pointer;
+
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 20rem;
+    position: absolute;
+    top: 11rem;
+    left: 20rem;
+    border: 1px solid;
+    padding: 2rem 0;
+    border-radius: 5px;
+}
+
+.questions {
+    position: relative;
+    font-size: 20px;
+    left: 2rem;
+    top: 1rem;
+}
+
+.questions h2 {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.answers ul {
+    position: relative;
+    left: 2rem;
+    top: 2rem;
+}
+
+.answers ul li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+.answers ul li input {
+    cursor: pointer;
+}
+
+button#submit {
+    position: relative;
+    width: 5rem;
+    top: 0rem;
+    text-align: center;
+    padding: 7px;
+    transform: translate(18rem, 0rem);
+}
+
+button#next {
+    position: relative;
+    left: 35rem;
+    top: 2.5rem;
+    padding: 0.3rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.correct-ans {
+    display: none;
+    position: absolute;
+    top: 13rem;
+    left: 32rem;
+}
+
+.wrong-ans {
+    display: none;
+    position: absolute;
+    top: 13rem;
+    left: 32rem;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+#logo {
+    position: relative;
+    bottom: 1.5rem;
+    right: 1.2rem;
+    font-size: 20px;
+}
+
+.error {
+    position: relative;
+    top: 4rem;
+    left: 2rem;
+}

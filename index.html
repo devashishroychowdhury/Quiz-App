@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="theme">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+            </label>
+        </div>
+        <header>Quiz App <i class="fa-solid fa-circle-question"></i></header>
+        <div class="questions">
+            <h2 id="title"></h2>
+        </div>
+        <div class="answers">
+            <ul>
+                <li>
+                    <input type="radio" name="check" value="HTML">
+                    <label id="label1" class="inputs"> HTML </label>
+                </li>
+                <li>
+                    <input type="radio" name="check" value="CSS">
+                    <label id="label2" class="inputs"> CSS </label>
+                </li>
+                <li>
+                    <input type="radio" name="check" value="JavaScript">
+                    <label id="label3" class="inputs"> JavaScript </label>
+                </li>
+                <li>
+                    <input type="radio" name="check" value="PHP">
+                    <label id="label4" class="inputs"> PHP </label>
+                </li>
+            </ul>
+
+            <div class="nextbtn">
+                <button id="next">Next</button>
+            </div>
+
+            <div class="correct-ans">
+                Correct Answer
+                <div id="logo"><span><i class="fa-sharp fa-solid fa-check" style="color: #13d110;"></i></span></div>
+            </div>
+            <div class="wrong-ans">
+                Wrong Answer
+                <div id="logo"><span><i class="fa-sharp fa-solid fa-xmark" style="color: #ec0909;"></i></span></div>
+            </div>
+
+            <div class="error">
+            </div>
+            <button id="submit">Submit</button>
+        </div>
+</body>
+
+<script src="script.js " defer></script>
+
+</html>
